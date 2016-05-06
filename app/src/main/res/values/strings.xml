@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">SiRenXinYi</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_send">Send</string>
+
+    <!-- drawer layout -->
+    <string name="home">Home</string>
+
+    <string name="explorer">Explorer</string>
+    <string name="discovery">Discovery</string>
+    <string name="device">Device</string>
+    <string name="friend">Friend</string>
+    <string name="textMessage">Message</string>
+
+    <string name="setting">Setting</string>
+    <string name="exit">Exit</string>
+
+    <string name="comprehensive">Comprehensive</string>
+    <string name="title_activity_answer_description">AnswerDescription</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string name="markdown_content">
+        "## Requirements\n"
+        "Target Sdk Version : 21\n"
+        "Min Sdk Version : 14\n\n"
+
+        "## How to use\n"
+        "1) Add this to your **build.gradle**.\n"
+        "``` java\n"
+        "repositories {\n"
+        "    maven {\n"
+        "        url "https://jitpack.io"\n"
+        "    }\n"
+        "}\n\n"
+
+        "dependencies {\n"
+        "  compile 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'\n"
+        "}\n"
+        "``` \n\n"
+
+        "2) Add  ```java jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout``` , which has at least one AbsListView, to your layout XML file.\n\n"
+
+        "3) Add the function so that the your application knows when a user has completed a 'WaveSwipeRefresh'.\n"
+        "``` java\n"
+        "mWaveSwipeRefreshLayout = (WaveSwipeRefreshLayout) findViewById(R.id.main_swipe);\n"
+        "mWaveSwipeRefreshLayout.setOnRefreshListener(new WaveSwipeRefreshLayout.OnRefreshListener() {\n"
+        "  @Override public void onRefresh() {\n"
+        "    // Do work to refresh the list here.\n"
+        "    new Task().execute();\n"
+        "  }\n"
+        "});\n"
+        "``` \n\n"
+
+        "## Credits\n"
+
+        "WaveSwipeRefresh is owned and maintained by [RECRUIT LIFESTYLE CO., LTD.](http://www.recruit-lifestyle.co.jp/)\n\n"
+
+        "WaveSwipeRefresh was originally created by\n"
+        "[Yuki Mima](https://github.com/amyu)\n"
+        "[Jumpei Matsuda](https://github.com/jmatsu)\n\n\n"
+
+
+        "## License\n\n"
+
+        "    Copyright 2015 RECRUIT LIFESTYLE CO., LTD.\n\n"
+
+        "    Licensed under the Apache License, Version 2.0 (the "License");\n"
+        "    you may not use this file except in compliance with the License.\n"
+        "    You may obtain a copy of the License at\n\n"
+
+        "       http://www.apache.org/licenses/LICENSE-2.0\n\n"
+
+        "    Unless required by applicable law or agreed to in writing, software\n"
+        "    distributed under the License is distributed on an "AS IS" BASIS,\n"
+        "    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n"
+        "    See the License for the specific language governing permissions and\n"
+        "    limitations under the License.\n"
+    </string>
+
+    <string name="personal_info_intro_default">
+        "Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue"
+        "cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian"
+        "bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber"
+        "cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese"
+        "the big cheese."
+    </string>
+    <string name="personal_signature_default">If I see you next to never, how can we say forever.</string>
+    <string name="address_default">Chengdu Sichuan, China</string>
+    <string name="work_default">Student in University</string>
+
+    <string name="title_activity_personal_info">PersonalInfoActivity</string>
+
+    <string name="personal_info_introduce">Personal Introduce</string>
+    <string name="personal_signature">Signature</string>
+
+    <string name="praise">Praise</string>
+    <string name="favorite">Favorite</string>
+    <string name="patients">Patients</string>
+    <string name="comment">Comment</string>
+    <string name="answer">Answer</string>
+    <string name="category">Category</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_address">Address</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_comment">Comment</string>
+
+    <string name="paired_devices">Paired Devices</string>
+    <string name="new_devices">New Devices</string>
+    <string name="scanning">Scanning Devices</string>
+    <string name="select_add_device">Select device to add</string>
+    <string name="scan">Scan</string>
+
+    <string name="none_paired">No device paired before</string>
+    <string name="none_found">No device new founded</string>
+    <string name="none_prefix">No device</string>
+
+    <string name="device_disconnected">Device has been disconnected</string>
+    <string name="device_connect_failed">Device connect failed</string>
+    <string name="device_connected">Connected</string>
+    <string name="device_connecting">Connecting…</string>
+    <string name="hint_comment">Say some thing!</string>
+    <string name="send">Send</string>
+
+    <string name="ask_at_time">创建于</string>
+    <string name="init_time">2016/4/12</string>
+
+    <string name="add_tag">ADD</string>
+    <string name="title_activity_question_edit">QuestionEditActivity</string>
+
+    <string name="question_title">Title</string>
+    <string name="question_detail">Input something detail about your question here…</string>
+    <string name="content_question_edit">Input something detail about your question here…</string>
+    <string name="title_activity_question_detail">QuestionDetailActivity</string>
+    <string name="title_activity_ecg">ECGActivity</string>
+    <string name="no_data_text">Sorry, no data so far.</string>
+
+    <string name="all_answers">所有回答</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+    <string name="run_background">是否允许？</string>
+    <string name="run_background_description">是否允许后台运行？后台运行才能保证服务的完整性。</string>
+    <string name="run_background_cancel">不允许</string>
+    <string name="run_background_confirm">允许</string>
+    <string name="title_activity_answer_edit">AnswerEditActivity</string>
+    <string name="title_activity_time_selector">TimeSelectorActivity</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="title_activity_audio_record">AudioRecordActivity</string>
+    <string name="title_activity_picture_piker">PicturePikerActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="collect_concern">CollectAdConcern</string>
+
+    <!-- 云信SDK所需文案 -->
+    <string name="nim_status_bar_multi_messages_incoming">%1$d位联系人有新消息</string>
+    <string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+    <string name="nim_status_bar_image_message">%1$s发来一条图片消息</string>
+    <string name="nim_status_bar_audio_message">%1$s发来一条语音消息</string>
+    <string name="nim_status_bar_video_message">%1$s发来一条视频消息</string>
+    <string name="nim_status_bar_file_message">%1$s发来一条文件消息</string>
+    <string name="nim_status_bar_location_message">%1$s分享了一个地理位置</string>
+    <string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+    <string name="nim_status_bar_custom_message">%1$s: 自定义消息</string>
+    <string name="nim_status_bar_unsupported_message">%1$s: 无法显示该内容</string>
+    <string name="nim_status_bar_hidden_msg_content">你收到一条新消息</string>
+    <string name="start_audio">开始</string>
+    <string name="cancel_audio">取消</string>
+    <string name="choose_from_album">从相册中选择</string>
+    <string name="choose_from_taking">拍摄图片</string>
+
+</resources>

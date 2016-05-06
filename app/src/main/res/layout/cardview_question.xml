@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview_question_cardview"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginEnd="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp">
+
+        <me.gujun.android.taggroup.TagGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id= "@+id/tag_group_question_cardview"
+            android:layout_marginBottom="16dp"
+            app:atg_borderColor="@color/colorLightPrimary"
+            app:atg_backgroundColor="@color/colorLightPrimary"
+            app:atg_textColor="@color/colorPrimary"
+            app:atg_checkedBorderColor="@color/colorAccent"
+            app:atg_checkedBackgroundColor="@color/colorAccent"
+            app:atg_checkedTextColor="@color/colorWhite"
+            app:atg_inputHint="@string/add_tag"
+            app:atg_isAppendMode="false">
+        </me.gujun.android.taggroup.TagGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_question_cardview"
+            android:textAppearance="?android:attr/textAppearanceSearchResultTitle"
+            android:lineSpacingExtra="4dp"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp">
+            <com.test.wllnon.sirenxinyi.customview.CircleImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/avatar_question_cardview"
+                android:src="@drawable/ic_account_circle_grey_600_48dp"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toLeftOf="@+id/textView2"
+                android:layout_toStartOf="@+id/textView2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/ask_at_time"
+                android:id="@+id/textView2"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@+id/time_question_detail"
+                android:layout_toStartOf="@+id/time_question_detail" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_question_detail"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/browser_question_cardview"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_remove_red_eye_grey_500_18dp"
+                android:drawableStart="@drawable/ic_remove_red_eye_grey_500_18dp"
+                android:drawablePadding="4dp"
+                android:textColor="@color/colorGrayDark"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer_question_cardview"
+                android:textSize="14sp"
+                android:textColor="@color/colorGrayDark"
+                android:drawableLeft="@drawable/ic_question_answer_grey_500_18dp"
+                android:drawableStart="@drawable/ic_question_answer_grey_500_18dp"
+                android:drawablePadding="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toRightOf="@+id/browser_question_cardview"
+                android:layout_toEndOf="@+id/browser_question_cardview" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

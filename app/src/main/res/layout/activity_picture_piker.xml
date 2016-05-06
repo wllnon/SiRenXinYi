@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.test.wllnon.sirenxinyi.activity.PicturePikerActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_from_album"
+        android:text="@string/choose_from_album"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        style="?android:attr/buttonBarButtonStyle"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_from_taking"
+        android:text="@string/choose_from_taking"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        style="?android:attr/buttonBarButtonStyle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/cancel_picture_pike"
+        android:layout_gravity="end"
+        android:text="@string/cancel"
+        style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

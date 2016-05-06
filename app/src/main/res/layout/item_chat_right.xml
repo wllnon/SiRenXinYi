@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <com.test.wllnon.sirenxinyi.customview.CircleImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/avatar_chat"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/avatar_chat"
+        android:layout_toStartOf="@+id/avatar_chat"
+        android:id="@+id/message_chat"
+        android:maxWidth="180dp"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="@color/colorPrimary"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_cornerRadius="3dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+            <TextView
+                android:id="@+id/content_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:maxWidth="180dp" />
+            <ImageView
+                android:id="@+id/picture_chat"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_broken_image_cyan_500_48dp"
+                android:contentDescription="@string/app_name" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/audio_chat"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/audio_tv_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:text="9:51"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/audio_im_chat"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/ic_volume_up_black_24dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_chat"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorSubText"
+        android:layout_below="@+id/message_chat"
+        android:layout_alignRight="@+id/message_chat"
+        android:layout_alignEnd="@+id/message_chat" />
+
+    <FrameLayout
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignTop="@+id/time_chat"
+        android:layout_toLeftOf="@+id/time_chat"
+        android:layout_toStartOf="@+id/time_chat">
+        <ImageButton
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:visibility="gone"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/warning_item"
+            android:src="@drawable/ic_info_black_18dp"
+            android:tint="@color/colorAccent" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_item"
+            style="?android:attr/progressBarStyleSmall"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_indigo_600_24dp"
+            android:checked="true"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_explorer"
+            android:icon="@drawable/ic_explore_teal_600_24dp"
+            android:title="@string/explorer" />
+        <item
+            android:id="@+id/nav_devices"
+            android:icon="@drawable/ic_devices_other_grey_600_24dp"
+            android:title="@string/device" />
+        <item
+            android:id="@+id/nav_friend"
+            android:icon="@drawable/ic_people_red_600_24dp"
+            android:title="@string/friend" />
+        <item
+            android:id="@+id/nav_collect_concern"
+            android:icon="@drawable/ic_collections_bookmark_orange_600_24dp"
+            android:title="@string/collect_concern" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_mail_outline_red_700_24dp"
+            android:title="@string/textMessage" />
+    </group>
+
+    <item android:title="@string/comprehensive">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/setting" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app_indigo_a200_24dp"
+                android:title="@string/exit" />
+        </menu>
+    </item>
+</menu>
